@@ -150,7 +150,7 @@ def train_model(rf, target):
 
 def plot_feature_importances(rf, target, index):
     # 打印分类报告（包含精确度、召回率、F1分数等指标）
-    print("\n模型评估报告:")
+    print("\nrf"+str(index+1)+"模型评估报告:")
     print(classification_report(y_test_list[index], y_pred_list[index], zero_division=np.nan))
 
     # 计算并打印准确率
